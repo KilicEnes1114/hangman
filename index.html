@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adam Asmaca - Bilişim Temalı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🖥️ Bilişim Adam Asmaca by https://www.entegrasyonbilisim.com/ if you learn more you will visit we website</h1>
+
+  <div id="baslangic">
+    <input type="text" id="isimInput" placeholder="Adını yaz veya boş bırakıp hazır isim kullan">
+    <button onclick="baslat()">Oyuna Başla</button>
+  </div>
+
+  <div id="oyun" style="display:none;">
+    <div class="kelime" id="kelime"></div>
+    <div class="harfler" id="harfler"></div>
+
+    <div style="margin-top: 10px;">
+      <button id="harfAlBtn" onclick="harfAl()">🪄 Harf Al (1)</button>
+      <button id="harfDegistirBtn" onclick="harfDegistir()">🔄 Olmayan Harfleri Çıkar (2)</button>
+    </div>
+
+    <pre class="adam" id="adam"></pre>
+    <div class="anlikSkor" id="anlikSkor"></div>
+  </div>
+
+  <div id="skorbordAlani">
+    <h2>🏆 Skorbord</h2>
+    <ol id="skorListesi"></ol>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
